@@ -7,3 +7,13 @@ add_library(tinyxml
 	tinyxmlerror.cpp
 	tinyxmlparser.cpp
 )
+
+install(TARGETS tinyxml
+	ARCHIVE DESTINATION lib
+	LIBRARY DESTINATION lib
+	RUNTIME DESTINATION bin
+)
+
+install(FILES tinyxml.h
+	DESTINATION include
+)
